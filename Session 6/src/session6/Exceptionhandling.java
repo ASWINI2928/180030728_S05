@@ -8,7 +8,15 @@ public class Exceptionhandling {
          try {
          int a=6/0;//exception object
          }
-         catch(Exception e) {}
+         catch(NullPointerException ne) {
+        	 System.out.println(ne);
+         }
+         catch(ArithmeticException e1) {
+        	 System.out.println(e1);
+         }
+         catch(Exception e) {
+        	 System.out.println(e);
+         }
          System.out.println("hello");
 	}
 
